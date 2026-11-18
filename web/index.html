@@ -1,0 +1,13 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>12社区 10周年纪念电子杂志 · 12 Club 10th Anniversary Ebook</title>
+<script>
+  // autoplay: open the book right away. Browsers hold back sound until a click, so the music starts
+  // with the first click on the book (unmuteOverlay hidden: no "click to unmute" layer over it).
+  // deviceFontRenderer: the dialogs' Chinese text uses device fonts (SimSun...): use the browser's fonts.
+  window.RufflePlayer = { config: { autoplay: "on", unmuteOverlay: "hidden", deviceFontRenderer: "canvas" } };
+</script>
+<script src="ruffle/ruffle.js"></script>
+<!-- main.swf is the iebook engine from 10th_Anniversary.exe. Like the exe: an 800x600 window,
+     no scaling (the engine lays itself out), and its relative loads (config.xml, pages) from book/. -->
+<embed src="book/main.swf" base="book/" width="800" height="600" scale="noscale">
